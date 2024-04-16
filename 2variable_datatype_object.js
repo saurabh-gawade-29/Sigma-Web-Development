@@ -54,7 +54,7 @@ var i = 7;
 
 {
     var i = "Saurabh" // it's assign the new value to global scope
-    console.log(i, "now it's take global scope");
+    console.log(i, "now it's take local scope");
 }
 console.log("After Executing above 2 block: ", i);
 
