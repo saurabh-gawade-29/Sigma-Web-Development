@@ -36,5 +36,5 @@ if (age > 0) {
 //* Ternary Conditions:
 let a = 5;
 let b = 6;
-let c = a < b ? b - a : "a is less than b"
-console.log(c)
+let c = a < b ? b - a : "a is less than b";
+console.log(c);

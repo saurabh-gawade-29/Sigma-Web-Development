@@ -9,10 +9,10 @@ greet("Uday");
 function sum(a, b) {
     // console.log("Sum is: " + a + b); //! Concat here - need to wrap in ()
     console.log("Sum is: " + (a + b));
-    return false
+    return false;
 }
 let check = sum(5, 5);
-console.log(check)
+console.log(check);
 
 //* You can write like this - with return keyword
 function summ(c, d) {
@@ -23,7 +23,7 @@ console.log("Result is: " + result);
 
 //! Default Parameter
 function sumThree(e, f, g = 5) {
-    return e + f + g
+    return e + f + g;
 }
 
 let resultThree = sumThree(5, 5); //g=5

@@ -28,8 +28,8 @@ console.log(typeof (k)); // object - Type of null - as per JS Specs
 
 //* You can declare varibale with let and const
 
-let f = "this is let variable"
-const g = "this is const variable - you cannot reasign or change the value"
+let f = "this is let variable";
+const g = "this is const variable - you cannot reasign or change the value";
 
 
 //? Var VS Let ----- IMP -----
@@ -39,12 +39,12 @@ const g = "this is const variable - you cannot reasign or change the value"
 //! {} this is block scope
 let h = 6;
 {
-    console.log(h, "Now it's take global scope h")
+    console.log(h, "Now it's take global scope h");
 }
 
 {
     let h = 66;
-    console.log(h, "Now it's take block scope h")
+    console.log(h, "Now it's take block scope h");
 }
 
 var i = 7;

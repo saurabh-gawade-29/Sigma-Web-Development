@@ -36,10 +36,10 @@ for (const key in obj) {
 // }
 
 //* For of Loop - deal with string or array
-let myname = "Saurabh"
-let fruit = ["apple", "banana", "kiwi", "strawberry"]
+let myname = "Saurabh";
+let fruit = ["apple", "banana", "kiwi", "strawberry"];
 for (const iterator of fruit) {
-    console.log(iterator)
+    console.log(iterator);
 }
 
 //! While Loop
