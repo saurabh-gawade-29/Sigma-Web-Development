@@ -96,4 +96,3 @@ console.log(newArr2, "nested array to single array but you have to put(level)");
 let arrtoString = [1, 2, 3, 4, 5];
 let checkarrtostring = arrtoString.toString();
 console.log(checkarrtostring, "Array to string conversion: type is", typeof checkarrtostring);
-
