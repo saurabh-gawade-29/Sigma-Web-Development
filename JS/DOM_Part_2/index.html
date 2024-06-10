@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Part - 2</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid white;
+        margin: 1rem;
+        padding: 0.2rem;
+      }
+      .container {
+        display: flex;
+      }
+      pre {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box1</div>
+      <div class="box">Box2</div>
+      <div class="box">Box3</div>
+      <div class="box">Box4</div>
+      <div class="box">Box5</div>
+    </div>
+    <pre>
+        Node:
+        ** Get All Child Nodes **
+
+        let nodes = document.body.childNodes;
+        console.log(nodes);
+        O/P: NodeList(6) [text, div.container, text, pre, text, script]
+
+        1.What is text in above array?
+        Ans: the space between two tags or any text type by user
+
+        2.How to access child node?
+        Ans: let singleNode = document.body.childNodes[0];
+             console.log(singleNode);
+             O/P: text 
+        
+        3. How to ignore text?
+        Ans: Using : firstElementChild, lastElementChild
+
+        let firstElementChildNode = document.body.firstElementChild;
+        console.log(firstElementChildNode);
+
+        let lastElementChildNode = document.body.lastElementChild;
+        console.log(lastElementChildNode);
+
+        //! How to Change css property using above methods;
+            let firstElementChildInnerElement = firstElementChildNode.firstElementChild;
+            console.log(firstElementChildInnerElement)
+            firstElementChildInnerElement.style.backgroundColor = 'red';
+            firstElementChildInnerElement.style.color = 'Yellow';
+    </pre>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
