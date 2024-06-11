@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid white;
+        margin: 1rem;
+        padding: 0.2rem;
+      }
+      .newBox {
+        height: 50px;
+        width: 50px;
+        border: 2px solid white;
+        margin: 1rem;
+        padding: 0.2rem;
+      }
+      .container {
+        display: flex;
+      }
+      pre {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box1</div>
+      <div id="name" class="box">Saurabh</div>
+      <div class="box">Box3</div>
+      <div class="box">Box4</div>
+      <div class="box">Box5</div>
+      <div class="newBox">Box6</div>
+      <div class="newBox">Box7</div>
+      <div class="newBox">Box8</div>
+      <div id="author" class="box">Prasad</div>
+    </div>
+    <pre>
+        //! If you want all the element which have classname box
+        let boxes = document.getElementsByClassName('box');
+        console.log(boxes);
+
+        //! If i want to change the color,bg color of second box using classname
+        //! for below Test Case i will write box name as saurabh
+        boxes[1].style.color = 'red';
+        boxes[1].style.backgroundColor = "Yellow";
+
+        //! but here is issue if i add multiple box at second position then saurabh position will change
+        //! So just put id there to target that element - only 
+        //! Id Always Unique
+        let boxesWithId = document.getElementById('name');
+        console.log(boxesWithId);
+        boxesWithId.style.color = "white";
+        boxesWithId.style.backgroundColor = "purple";
+
+        //! QuerySelector - it will return first element who has className=> .box
+        /* IMP NOTE:
+        let boxes = document.getElementsByClassName('box');  ==> box without "."
+        see the diff
+        let boxClassName = document.querySelector('.box'); ==> box without "."
+        */
+        let boxClassName = document.querySelector('.box');
+        console.log(boxClassName)
+
+        //! Now change the background Color
+        boxClassName.style.backgroundColor = 'green';
+    </pre>
+    <script src="./index.js"></script>
+  </body>
+</html>
